@@ -19,5 +19,6 @@ jenkins용 테스트
 <h3>1> github  에  commit / push 한다</h3>
 <h3>2> jenkins server와 연동한다</h3>
 <h3>3> push  발생시  jenkins가  빌드 배포한다</h3>
+<h3>4> ===추가, commit, push 된 부분===</h3>
 </body>
 </html>
