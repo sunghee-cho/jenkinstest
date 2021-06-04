@@ -80,12 +80,12 @@ public class EmpController {
  이메일<input type=text name="email" ><br>
  직종<input type=text name="job_id"><br>*/
 	@RequestMapping(value="/empadd", method=RequestMethod.POST)
-	public String addEmp2(EmpVO vo, HttpServletRequest req) {
+	public String addEmp2(EmpVO vo) {
 		//System.out.println(vo.toString());//null , 0
 		service.registerEmp(vo);
 		//return "/mybatis/emplist";==> emplist.jsp 이동(모델 없이)
 		//return "redirect:/jenkins-test/emplist"; //==> /emplist  매핑 메소드 호출-모델-뷰
-		return "redirect:"+req.getContextPath()+"/emplist";
+		return "redirect:/emplist";
 	}	
 	
 	
