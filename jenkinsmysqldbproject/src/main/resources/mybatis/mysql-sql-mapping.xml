@@ -4,7 +4,7 @@
 <mapper namespace="spring_mybatis.EmpDAO">
 
 <select id="getOneEmp" resultType="empVO" parameterType="int">
-SELECT * FROM EMPLOYEES WHERE EMPLOYEE_id=#{employee_id} 
+SELECT * FROM employees WHERE employee_id=#{employee_id} 
 </select>
 
 <select id="getAllEmp" resultType="empVO">
@@ -36,7 +36,7 @@ where R between
 </select>
 
 <insert id="insertEmp" parameterType="empVO">
-	INSERT INTO EMPLOYEES(employee_id, first_name, last_name, email, job_id, hire_date)
+	INSERT INTO employees(employee_id, first_name, last_name, email, job_id, hire_date)
 	values(#{employee_id}, #{first_name}, #{last_name}, #{email}, #{job_id}, sysdate() )
 </insert>
 <!-- 

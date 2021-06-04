@@ -15,7 +15,7 @@ $(document).ready(function() {
 </head>
 <body>
 <h1>사원 등록</h1>
-<FORM action="/empadd" method=post>
+<FORM action="<%=request.getContextPath() %>/empadd" method=post>
  사번<input type=text name="employee_id" ><br>
  이름<input type=text name="first_name" ><br>
  성<input type=text name="last_name" ><br>   
